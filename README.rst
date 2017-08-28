@@ -16,8 +16,6 @@ Next, clone this repo:
     $ git clone https://github.com/kumarisneha/django_docker.git
     $ cd django-docker
 
-All this three .py files are imported to main.py from mymodule folder.
-
 Configure the project
 ********************
 Build the Docker image (you should be in the django-docker/ directory, which contains the Dockerfile):
