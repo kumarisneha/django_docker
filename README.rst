@@ -38,7 +38,7 @@ Open http://127.0.0.1:8000/ in a browser. You should see a "Address Book web app
     
 Grab the CONTAINER ID from the docker ps output above, and use docker kill to stop the container:
 ::
-    $ docker kill 2830610e8c87
+    $ docker kill b164405ac154
         
 The output of docker ps should now be empty:
 ::
