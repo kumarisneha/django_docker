@@ -32,14 +32,9 @@ Run docker ps to verify that the Docker container is running:
 ::
 
     CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS                          NAMES
-    2830610e8c87        <yourname>/django-docker   "/usr/bin/supervisord"   25 seconds ago      Up 25 seconds       0.0.0.0:80->80/tcp, 8000/tcp   focused_banach
+    b164405ac154        django_img:0.1         "/start.sh"             48 seconds ago      Up 45 seconds        0.0.0.0:8000->8000/tcp         affectionate_borg
 
-You should now be able to access the running app through a web browser. Run docker-machine ls to get the local IP address for your Docker host:
-::
-
-    NAME           ACTIVE   DRIVER       STATE     URL                         SWARM
-    mydockerhost   *        virtualbox   Running   tcp://192.168.99.100:2376
-    Open http://192.168.99.100 (or your host's address, if it's different) in a browser. You should see a "Hello, world!" message.
+Open http://127.0.0.1:8000/ in a browser. You should see a "Address Book web application".
     
 Grab the CONTAINER ID from the docker ps output above, and use docker kill to stop the container:
 ::
