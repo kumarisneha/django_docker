@@ -14,11 +14,11 @@ Next, clone this repo:
 ::
 
     $ git clone https://github.com/kumarisneha/django_docker.git
-    $ cd django-docker
+    $ cd django_docker
 
 Configure the project
 ********************
-Build the Docker image (you should be in the django-docker/ directory, which contains the Dockerfile):
+Build the Docker image (you should be in the django_docker/ directory, which contains the Dockerfile):
 ::
 
     $ docker build -t <yourname>:0.1 .
@@ -26,7 +26,7 @@ Build the Docker image (you should be in the django-docker/ directory, which con
 Run the Docker image you just created
 ::
 
-    $ docker run -d -p 8000:8000 <yourname>:0.1
+    $ docker run -d -p 8000:8000 <yourimagename>:0.1
 
 Run docker ps to verify that the Docker container is running:
 ::
